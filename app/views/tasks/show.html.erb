@@ -1,0 +1,8 @@
+<div class="task-gestion">
+  <h1><%= @task.title %></h1>
+  <%= link_to "Edit task", edit_task_path(@task) %>
+</div>
+<p><%= @task.details %></p>
+<p>completed : <%= @task.completed ? 'yes' : 'no' %></p>
+
+<%= link_to "Back to all tasks", tasks_path %>
